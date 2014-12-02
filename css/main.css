@@ -1,0 +1,981 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html,body{
+    height: 100%;
+}
+a:hover{
+    text-decoration: none;
+}
+.mobi-nav{
+    background: rgba(255,255,255,0.6);
+}
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+header{
+    height: 100%;
+    background: url('../img/background.jpg') no-repeat;
+    background-position: center;
+    color: white;
+}
+header h1{
+    float: left;
+}
+header nav{
+    float: right;
+    margin-top: 80px;
+    font-family: Helvetica, sans-serif;
+}
+header li{
+    display: inline-block;
+    margin: 0px 15px 0 0;
+}
+header a{
+    color: white;
+}
+header a:hover{
+    color: #f3f3f3;
+}
+
+.header-title{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+.header-title h2{
+    float: left;
+    font-size: 38px;
+    font-family: RobotoSlab-Regular;
+    margin-right: 10px;
+}
+.header-title p{
+    font-size: 19px;
+    font-family: Roboto-Light;
+    padding-left: 5px;
+}
+.header-title-text{
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    padding: 35px 10%;
+}
+
+@media (min-width: 1500px) {
+    header{
+        background-size: 100% 100%;
+    }
+}
+@media (min-width: 1300px) {
+.header-title-text{
+    padding: 35px 20%;
+}
+}
+@media (max-width: 992px) {
+.header-title-text{
+    padding: 35px 5%;
+}
+.header-title h2{
+    font-size: 34px;
+}
+.header-title p{
+    font-size: 16px;
+}
+}
+@media (max-width: 768px) {
+    .header-title{
+        top: 60%;
+    }
+    .header-title-text{
+        padding: 15px 10%;
+    }
+    .header-title h2{
+        text-align: center;
+        float: none;
+        font-size: 30px;
+    }
+    .header-title p{
+        text-align: center;
+        font-size: 15px;
+    }
+}
+/* ==========================================================================
+   SERVICES
+   ========================================================================== */
+
+#services{
+    background: url(../img/pattern100_10.png);
+    text-align: center;
+    padding: 30px 0 40px 0;
+}
+#services h1{
+    font-family: RobotoSlab-Light;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.service{
+    padding: 60px 0;
+    height: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.service:hover{
+    padding: 20px 0;
+}
+.service img{
+    width: 64px;
+}
+.service h2{
+    font-family: Roboto-Light;
+    font-size: 20px;
+    margin: 14px 0;
+}
+.service p{
+    width: 170px;
+    margin: 0 auto;
+    font-family: PtSerif-Regular;
+    font-size: 14px;
+    color: #959595;
+    display: none;
+}
+.service h3{
+    position: absolute;
+    bottom:5px;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+    font-family: Roboto-Regular;
+    color: #363636;
+    display: none;
+    text-decoration: underline;
+    color: #638ca6;
+}
+@media (max-width: 992px) {
+    .service{
+        padding: 20px 0;
+    }
+    .service p{
+        display: block;
+    }
+    .service h3{
+        display: block;
+    }
+}
+@media (max-width: 768px) {
+    #services{
+        padding: 20px 0 20px 0;
+    }
+    #services h1{
+        font-size: 20px;
+    }
+    .service{
+        padding: 20px 0;
+        height: 120px;
+    }
+    .service p{
+        display: none;
+    }
+    .service img{
+        width: 48px;
+    }
+    .service h2{
+        font-size: 16px;
+    }
+    .service h3{
+        display: block;
+        font-size: 12px;
+    }
+}
+/* ==========================================================================
+   ABOUT US
+   ========================================================================== */
+
+#about-us{
+    text-align: center;
+    background-color: #354f5f;
+    color: white;
+    padding: 30px 0 40px 0;
+}
+#about-us h1{
+    padding: 10px 0;
+    font-family: RobotoSlab-Regular;
+    font-size: 25px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    width: 150px;
+    margin: 0 auto 30px auto;
+
+}
+#about-us p{
+    text-align: center;
+    font-family: Roboto-Light;
+    font-size: 20px;
+    line-height: 30px;
+}
+@media (max-width: 768px) {
+    #about-us{
+        padding: 20px 0;
+    }
+    #about-us h1{
+        font-size: 20px;
+        padding: 7px 0;
+        margin: 0 auto 20px auto;
+    }
+    #about-us p{
+        font-size: 16px;
+    }
+}
+/* ==========================================================================
+   WORKS
+   ========================================================================== */
+
+#portfolio{
+    text-align: center;
+    background: url(../img/pattern100_10.png);
+    padding: 30px 0;
+}
+#portfolio h1{
+    font-family: RobotoSlab-Light;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.portfolio-work{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    opacity: 0.5;
+    border: 10px solid #354f5f;
+    border-radius: 50%;
+    background-size: 100%;
+    margin-bottom: 30px;
+}
+.portfolio-work:hover{
+    opacity: 1;
+}
+
+.portfolio-description{
+    height: 91px;
+    width: 184px;
+    border-radius:0 0 180px 180px ;
+    background: #354f5f;
+    margin-top: 91px;
+    margin-left: -2px;
+    color: white;
+}
+.portfolio-description h2{
+    font-size: 18px;
+    font-family: RobotoSlab-Regular;
+    padding: 20px 0 10px 0;
+}
+.portfolio-description h3{
+    font-size: 14px;
+    font-family: Roboto-Light;
+}
+
+.more_works_btn{
+    display: block;
+    width: 120px;
+    padding: 10px 0;
+    font-size: 15px;
+    font-family: Roboto-Light;
+    margin: 0 auto;
+    background: transparent;
+    border: 1px solid #354f5f;
+    color: #354f5f;
+    opacity: 0.6;
+}
+.more_works_btn:hover{
+    opacity: 1;
+}
+@media (max-width: 992px) {
+.portfolio-work{
+    width: 150px;
+    height: 150px;
+    opacity: 1;
+    border: 5px solid #354f5f;
+    margin-bottom: 20px;
+}
+.portfolio-description{
+    height: 71px;
+    width: 144px;
+    border-radius:0 0 180px 180px ;
+    background: #354f5f;
+    margin-top: 71px;
+    margin-left: -2px;
+    color: white;
+}
+.portfolio-description h2{
+    font-size: 15px;
+    font-family: RobotoSlab-Regular;
+    padding: 15px 0 5px 0;
+}
+.portfolio-description h3{
+    font-size: 12px;
+    font-family: Roboto-Light;
+}
+}
+@media (max-width: 768px) {
+.portfolio-work{
+    width: 90%;
+    height: 100px;
+    opacity: 1;
+    border-radius: 0;
+    border: 1px solid #354f5f;
+    margin-bottom: 20px;
+}
+.portfolio-description{
+    height: 40px;
+    width: 100%;
+    border-radius: 0;
+    background: #354f5f;
+    margin-top: 60px;
+    margin-left: 0;
+    color: white;
+}
+.portfolio-description h2{
+    font-size: 16px;
+    font-family: RobotoSlab-Regular;
+    padding: 4px 0 4px 0;
+}
+.portfolio-description h3{
+    font-size: 12px;
+    font-family: Roboto-Light;
+}
+    #portfolio{
+        padding: 20px 0 20px 0;
+    }
+    #portfolio h1{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+#footer{
+    background: #354f5f;
+    color: white;
+}
+.footer-logo img{
+    float: left;
+    width: 110px;
+    margin: 15px 0 0 0;
+}
+.footer-logo p{
+    float: left;
+    width: 200px;
+    font-size: 13px;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.contacts{
+    padding: 20px 0;
+    font-size: 16px;
+    font-family: Roboto-Light;
+    line-height: 35px;
+}
+.contacts span{
+    font-size: 25px;
+    font-family: RobotoSlab-Light;
+}
+.social{
+    margin-top: 50px;
+}
+.social img{
+    width: 32px;
+    margin-right: 10px;
+}
+.footer-nav{
+    margin: 20px 0;
+}
+.footer-nav li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.footer-nav a{
+    color: white;
+}
+.footer-left h1{
+    font-family: RobotoSlab-Light;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.email-input,.message-input{
+    width: 100%;
+    background: #687b87;
+    border: 1px solid white;
+    font-size: 18px;
+    color: white;
+    font-family: Roboto-Light;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+}
+.message-input{
+    height: 150px;
+}
+
+.message-submit{
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 11px;
+    font-family: Roboto-Light;
+}
+
+@media (max-width: 992px) {
+.contacts{
+    font-size: 14px;
+    line-height: 20px;
+}
+.contacts span{
+    font-size: 20px;
+}
+.message-input{
+    height: 120px;
+}
+}
+@media (max-width: 768px) {
+.contacts{
+    font-size: 10px;
+}
+.contacts span{
+    font-size: 14px;
+}
+.footer-logo img{
+    width: 70px;
+    margin: 10px 0 0 0;
+}
+.footer-logo p{
+    float: left;
+    width: 150px;
+    font-size: 10px;
+    margin-top: 15px;
+    margin-left: 3px;
+}
+.social{
+    margin-top: 0px;
+}
+.mail-form{
+    margin-bottom: 20px;
+}
+}
+
+
+/* ==========================================================================
+   ==========================================================================
+   SERVICES
+   ==========================================================================
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+#service-header{
+    height: 400px;
+    background: url('../img/3d_bg.jpg') no-repeat;
+    background-position: center;
+    color: white;
+}
+#service-header h1{
+    float: left;
+}
+#service-header nav{
+    float: right;
+    margin-top: 80px;
+    font-family: Helvetica, sans-serif;
+}
+#service-header li{
+    display: inline-block;
+    margin: 0px 15px 0 0;
+}
+#service-header a{
+    color: white;
+}
+#service-header a:hover{
+    color: #f3f3f3;
+}
+
+.service-header-title{
+    position: relative;
+    top: 45%;
+    left: 0;
+    right: 0;
+}
+.service-header-title h2{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 38px;
+    font-family: RobotoSlab-Regular;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    padding: 20px 0;
+}
+@media (max-width: 992px) {
+.service-header-title{
+    top: 50%;
+}
+.service-header-title h2{
+    font-size: 30px;
+    padding: 15px 0;
+}
+}
+@media (max-width: 768px) {
+    #service-header{
+    height: 100%;
+}
+.service-header-title{
+    top: 75%;
+}
+.service-header-title h2{
+    font-size: 25px;
+    padding: 10px 0;
+}
+}
+
+/* ==========================================================================
+   About serviece
+   ========================================================================== */
+
+#about-service{
+    background: url(../img/pattern100_10.png);
+    padding: 30px 0;
+}
+#about-service p{
+    font-size: 18px;
+    font-family: PtSerif-Regular;
+    line-height: 27px;
+    text-align: justify;
+}
+#about-service span{
+    font-family: PtSerif-Bold;
+}
+@media (max-width: 768px) {
+    #about-service p{
+    font-size: 14px;
+    line-height: 23px;
+    text-align: justify;
+}
+}
+/*-----------TABLE----------*/
+
+/* ==========================================================================
+   About serviece
+   ========================================================================== */
+
+#how-it-works{
+    background-color: #354f5f;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+#how-it-works h1{
+    padding: 10px 0;
+    font-family: RobotoSlab-Regular;
+    font-size: 25px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    width: 270px;
+    margin: 0 auto 30px auto;
+
+}
+
+
+table{
+    width: 100%;
+    text-align: center;
+}
+td{
+    vertical-align: middle;
+}
+.how-it-table td{
+    padding: 10px 0;
+}
+.how-it-table{
+    font-family: PtSerif-Regular;
+    font-size: 20px;
+    color: white;
+}
+.td-round{
+    width: 20%;
+}
+.td-text{
+    width: 60%;
+}
+.td-space{
+    width: 20%;
+}
+
+.how-it-round{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #638ca6;
+}
+@media (max-width: 768px) {
+.how-it-round{
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+}
+.how-it-table{
+    font-family: PtSerif-Regular;
+    font-size: 15px;
+    color: white;
+}
+#how-it-works h1{
+    padding: 8px 0;
+    font-family: RobotoSlab-Regular;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    width: 200px;
+    margin: 0 auto 30px auto;
+
+}
+}
+
+/* ==========================================================================
+   Why we
+   ========================================================================== */
+
+#why-we{
+    text-align: center;
+    background: url(../img/pattern100_10.png);
+    padding: 30px 0;
+}
+
+
+#why-we h1{
+    font-family: RobotoSlab-Light;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.why-we-table{
+    font-family: PtSerif-Italic;
+    font-size: 18px;
+}
+
+.why-we-table td{
+    padding: 10px 0;
+}
+
+.why-we-round{
+    width: 20px;
+    height: 20px;
+    background-color: #638ca6;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+.why-we-round{
+    width: 15px;
+    height: 15px;
+}
+.how-it-table{
+    font-family: PtSerif-Regular;
+    font-size: 15px;
+    color: white;
+}
+#why-we h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.why-we-table{
+    font-size: 15px;
+}
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

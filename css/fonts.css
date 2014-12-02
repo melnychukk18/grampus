@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'PtSerif-Regular';
+    src: url('../fonts/PT_Serif/PT_Serif-Web-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PtSerif-Italic';
+    src: url('../fonts/PT_Serif/PT_Serif-Web-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PtSerif-Bold';
+    src: url('../fonts/PT_Serif/PT_Serif-Web-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto/Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RobotoSlab-Light';
+    src: url('../fonts/Roboto_Slab/RobotoSlab-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RobotoSlab-Regular';
+    src: url('../fonts/Roboto_Slab/RobotoSlab-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
